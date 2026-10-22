@@ -1,56 +1,86 @@
-# Product Information Draft
+# Modeling Software Architecture
 
-## Title and Edition
+*Communicate system structure, behavior, and trade-offs with C4, viewpoints, and perspectives*
 
-Modeling Software Architecture
+Companion repository for **Modeling Software Architecture** by **Ilya Hardzeenka**. Here you can explore the book's figures, open editable diagrams, and examine the complete marketing-system model built throughout the chapters.
 
-## Subtitle
+The book shows how to create connected architecture views that answer questions for different audiences. One continuous marketing-system case study connects business functions, system structure, data, operational processes, concurrency, development, and deployment. Architecture perspectives then help evaluate concerns that span those views.
 
-Communicate system structure, behavior, and trade-offs with C4, viewpoints, and perspectives
+**Start with the [chapter figures](#chapter-figures), explore the [marketing-system model](#marketing-system-model), or learn [how to open the diagrams](#open-and-edit-the-diagrams).**
 
-## Packtpub Metadescription
+## Who this book is for
 
-See the whole system through connected architecture views and examine design decisions before they become code.
+Software architects, engineers, developers, technical leads, engineering managers, consultants, CTOs, product owners, and business analysts who need to understand, explain, design, or evolve software systems.
 
-## Key Features
+A basic understanding of software systems is sufficient. No prior experience with C4 or architecture modeling is required.
 
-- Learn to model software architecture across structure, behavior, data, and deployment
-- Combine C4 with viewpoints and perspectives to answer stakeholder questions
-- Apply a viewpoint-based method to create a complete model of a marketing system
-- Purchase of the print or Kindle book includes a free PDF eBook
+## What you'll learn
 
-## Short Description
+- Choose views, abstraction levels, and notation to suit a question and its audience.
+- Combine C4 with viewpoints and perspectives to build a consistent architecture model.
+- Connect functions, components, data, processes, delivery paths, and infrastructure.
+- Evaluate cross-cutting concerns, identify risks, and discuss design trade-offs.
+- Document decisions, version diagrams, and keep architecture models current.
 
-Different architecture questions need different views. This book explains how C4, viewpoints, and perspectives work together to model systems and communicate their architecture. It also shows how to apply the method to a marketing system.
+## Explore the repository
 
-## Long Description
+### Chapter figures
 
-Architecture models often become collections of diagrams for different audiences. Boundaries blur, decisions lose context, and stakeholders are left without clear answers. Modeling Software Architecture shows how to connect those views into one coherent model, so stakeholders can understand the system and discuss design decisions with the context they need.
+Each chapter folder contains its figures, including progressive versions that show how the model develops. File names follow the figure numbering in the book; for example, `chapter-07/figure-7.01.drawio.png`.
 
-You will learn how abstraction levels, metamodels, notation, and visual communication shape a useful model. The book introduces C4, Viewpoints and Perspectives, 4+1, and TOGAF, then focuses on combining C4 with viewpoints and perspectives. It also covers diagram conventions, architecture decision records, version control, and model maintenance.
+**Part 1: Foundations of Software Architecture Modeling** introduces models, visual communication, abstraction, frameworks, notation, documentation, and version control.
 
-You will examine seven viewpoints: Functional, Context, Information, Operational, Concurrency, Development, and Deployment. You will also learn seven perspectives: Security, Performance and Scalability, Availability and Resilience, Evolution, Development Resource, Cost, and Location. Together, they help you describe a system and assess concerns that cross several views.
+| Chapter | Figures |
+| --- | --- |
+| 1. Visualizing Systems | [chapter-01](chapter-01/) |
+| 2. Modeling Software Architecture | [chapter-02](chapter-02/) |
+| 3. Architecture Frameworks and Notations | [chapter-03](chapter-03/) |
+| 4. Diagramming, Documentation, and Version Control | [chapter-04](chapter-04/) |
 
-You will apply the method to a marketing system, connecting its views into a model that others can navigate. By the end, you will know which views to use for different questions and how to communicate the architecture to technical and business stakeholders.
+**Part 2: Modeling Architecture with Viewpoints, Perspectives, and C4** applies those foundations to the marketing system, building connected views and evaluating the completed model.
 
-## What You Will Learn
+| Chapter | Figures |
+| --- | --- |
+| 5. Understanding the Marketing Domain | [chapter-05](chapter-05/) |
+| 6. Functional Viewpoint: Modeling Functions and Business Processes | [chapter-06](chapter-06/) |
+| 7. Context Viewpoint: Defining Structure Using the Core C4 Model | [chapter-07](chapter-07/) |
+| 8. Information Viewpoint: Modeling Data Structures and Flows | [chapter-08](chapter-08/) |
+| 9. Operational Viewpoint: Connecting Functions, Components, and Data | [chapter-09](chapter-09/) |
+| 10. Concurrency Viewpoint: Modeling Parallel Processing and Scalability | [chapter-10](chapter-10/) |
+| 11. Development Viewpoint: Organizing Code, Repositories, and Delivery | [chapter-11](chapter-11/) |
+| 12. Deployment Viewpoint: Mapping Components to Infrastructure | [chapter-12](chapter-12/) |
+| 13. Architecture Perspectives: Evaluating Cross-Cutting Concerns | [chapter-13](chapter-13/) |
 
-- Explain software systems through connected architecture views
-- Match each view's detail to its audience and purpose
-- Use C4 to move between abstraction levels
-- Build all seven architecture viewpoints
-- Apply perspectives to relevant views to surface risks and trade-offs
-- Document decisions and keep architecture models current
-- Apply a viewpoint-based method to model a marketing system
+### Marketing-system model
 
-## Approach
+The [marketing-model](marketing-model/) folder brings together the seven completed viewpoints. Open them to review how the views fit together and adapt parts of the model for your own projects.
 
-The book follows a traditional lesson structure: learn the theory first, then apply it. The first part covers modeling fundamentals, abstraction, metamodels, notation, viewpoints, and perspectives. In the second part, each viewpoint begins with a drawing task. You pause to draw your own view, then compare it with the author's version, refine it, and learn how to present it to stakeholders.
+| Viewpoint | Model |
+| --- | --- |
+| Functional | [Functions and business processes](marketing-model/01.functional-viewpoint.drawio.png) |
+| Context | [System structure](marketing-model/02.context-viewpoint.drawio.png) |
+| Information | [Data structures and flows](marketing-model/03.information-viewpoint.drawio.png) |
+| Operational | [Functions, components, and data in sequence](marketing-model/04.operational-viewpoint.drawio.png) |
+| Concurrency | [Concurrent processing](marketing-model/05.concurrency-viewpoint.drawio.png) |
+| Development | [Code, repositories, and delivery](marketing-model/06.development-viewpoint.drawio.png) |
+| Deployment | [Components and infrastructure](marketing-model/07.deployment-viewpoint.drawio.png) |
 
-## Target Audience
+The [practice](practice/) folder contains additional viewpoint diagrams organized into introduction, mechanics, and presentation files.
 
-This book is for software architects, engineers, technical leads, engineering managers, and developers moving into architecture work. Consultants, product owners, business analysts, and CTOs who need to understand or explain software systems will also benefit. Readers will learn to create connected architecture views and communicate design decisions to technical and business stakeholders. A basic understanding of software systems is enough; no previous modeling experience is required.
+## Open and edit the diagrams
 
-## Author Bio
+Most figures use the `.drawio.png` format, which combines a PNG image with an embedded, editable draw.io diagram.
 
-Ilya Hardzeenka is a Lead Data and Software Architect with more than a decade of experience designing cloud-native platforms, enterprise data architectures, and AI-driven analytics at Vonage, Profitero, Rockwell Automation, and IBM. His career progressed from hands-on engineering and architecture roles to Chief Architect. Along the way, he sharpened his architecture practice by teaching developers and fellow architects how to model systems and explain design decisions. Ilya founded Software Architecture Guild to share these methods with a wider community. He led teams to first place in O'Reilly's Architectural Kata in 2023 and third place in 2025. Those competitions tested the same modeling and communication methods covered in this book.
+- **View a figure:** open it on GitHub or download it and use an image viewer. Enlarge detailed diagrams to inspect labels and relationships.
+- **Edit a diagram:** download the original `.drawio.png` file, open [draw.io](https://app.diagrams.net/), choose **File → Open From → Device**, and select the file. You can also use the draw.io desktop application.
+
+## Work through the exercises
+
+Read the chapters in sequence: each viewpoint reuses information and decisions from earlier chapters. In Chapters 6–12, complete the *Try it yourself* exercises before looking at the finished diagrams.
+
+1. Review the viewpoint's purpose, inputs, notation, and modeling rules.
+2. Make your first attempt using the information available at that point. Selected chapter figures provide starting points for the exercises.
+3. Follow the progressive figures and examine the reasoning behind each addition.
+4. Complete the second exercise, then compare your work with the completed viewpoint and check its consistency with earlier views.
+
+Use your preferred modeling tool, a whiteboard, or paper. No particular programming language, operating system, or cloud account is required.
